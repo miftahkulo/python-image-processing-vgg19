@@ -1,0 +1,25 @@
+1. Import library Pandas
+
+2. Load dataset menggunakan read_csv() dari library Pandas
+   - dataset disimpan di variabel 'data'
+
+3. Buat fungsi calculate_age() dengan parameter 'dob'
+   a. Ubah format tanggal di 'dob' menjadi format datetime menggunakan to_datetime() dari Pandas
+   b. Hitung selisih antara tanggal saat ini dengan tanggal lahir menggunakan .apply()
+   c. Ambil hanya nilai integer pada selisih tanggal menggunakan .astype()
+   d. Bagi 365 untuk mengonversi selisih tanggal ke tahun
+   e. Return nilai selisih tanggal dalam tahun
+
+4. Tambahkan kolom baru 'age' ke dalam dataframe 'data' menggunakan .apply() dan fungsi calculate_age()
+
+5. Filter data untuk hanya memuat baris dengan kolom 'Gender' bernilai 'Male'
+
+6. Group data berdasarkan kolom 'Country' dan 'age', lalu hitung jumlah baris pada setiap grup menggunakan .size()
+
+7. Reset index dari hasil grouping menggunakan .reset_index()
+
+8. Ubah nama kolom hasil grouping menjadi 'total' menggunakan .rename()
+
+9. Urutkan hasil grouping berdasarkan kolom 'Country' dan 'age' menggunakan .sort_values()
+
+10. Tampilkan hasil grouping menggunakan print() dan fungsi head() untuk membatasi jumlah baris yang ditampilkan.

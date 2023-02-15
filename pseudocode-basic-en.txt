@@ -1,0 +1,25 @@
+1. Import the Pandas library.
+
+2. Load the dataset using read_csv() function from the Pandas library.
+   - Store the dataset in the variable 'data'.
+
+3. Create a function calculate_age() with parameter 'dob':
+   a. Convert the date format in 'dob' to datetime format using to_datetime() from Pandas.
+   b. Calculate the difference between the current date and the date of birth using .apply().
+   c. Take only the integer value of the difference in days using .astype().
+   d. Divide the difference in days by 365 to convert it to years.
+   e. Return the difference in years.
+
+4. Add a new column 'age' to the dataframe 'data' using .apply() and the function calculate_age().
+
+5. Filter the data to include only rows with the 'Gender' column value as 'Male'.
+
+6. Group the data based on the 'Country' and 'age' columns and count the number of rows in each group using .size().
+
+7. Reset the index of the grouped result using .reset_index().
+
+8. Rename the column of the grouped result as 'total' using .rename().
+
+9. Sort the grouped result based on the 'Country' and 'age' columns using .sort_values().
+
+10. Display the grouped result using print() and limit the number of rows displayed using the head() function.
